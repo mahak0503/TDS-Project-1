@@ -1,0 +1,9 @@
+langchain
+openai
+pypdf
+faiss-cpu
+gradio
+streamlit  # New
+python-dotenv
+speechrecognition  # New (for STT)
+pyaudio  # New (for microphone access)
