@@ -1,13 +1,9 @@
 streamlit
-langchain
 openai
 faiss-cpu
+langchain==0.2.1
 tiktoken
+requests
 beautifulsoup4
 selenium
-bs4
 python-dotenv
-requests
-langchain==0.2.1
-langchain-community==0.0.30
-
