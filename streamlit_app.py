@@ -16,7 +16,13 @@ load_dotenv()
 
 # Step 1: Create FAISS index if it doesn't exist
 def create_faiss_index():
-    loader = TextLoader("course_material.txt")  # Ensure this file exists in the same directory
+   from langchain.document_loaders import TextLoader
+from data_loader import generate_combined_file
+
+generate_combined_file()  # fetch + save data
+
+loader = TextLoader("data/combined.txt")
+
     documents = loader.load()
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     docs = text_splitter.split_documents(documents)
