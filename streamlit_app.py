@@ -16,12 +16,12 @@ load_dotenv()
 
 # Step 1: Create FAISS index if it doesn't exist
 def create_faiss_index():
-   from langchain.document_loaders import TextLoader
-from data_loader import generate_combined_file
+    from langchain.document_loaders import TextLoader
+    from data_loader import generate_combined_file
 
-generate_combined_file()  # fetch + save data
+    generate_combined_file()  # fetch + save data
 
-loader = TextLoader("data/combined.txt")
+    loader = TextLoader("data/combined.txt")
 
     documents = loader.load()
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
