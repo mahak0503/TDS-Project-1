@@ -1,5 +1,5 @@
 streamlit
-openai
+openai>=1.2.3
 faiss-cpu
 langchain==0.0.310
 tiktoken
@@ -7,4 +7,3 @@ requests
 beautifulsoup4
 selenium
 python-dotenv
-openai>=1.2.3
