@@ -1,9 +1,11 @@
+streamlit
 langchain
 openai
-pypdf
 faiss-cpu
-gradio
-streamlit  # New
+tiktoken
+beautifulsoup4
+selenium
+bs4
 python-dotenv
-speechrecognition  # New (for STT)
-pyaudio  # New (for microphone access)
+requests
+
